@@ -4,16 +4,16 @@ using namespace std;
 
 int main()
 {
-    double a, b, c;
+    int a, b, c;
 
     cin >> a >> b >> c;
 
-    double max, min, mid;
+    int max, min, mid;
 
-    if (a > b && a > c)
+    if (a >= b && a >= c)
     {
         max = a;
-        if (b > c)
+        if (b >= c)
         {
             mid = b;
             min = c;
@@ -24,10 +24,10 @@ int main()
             min = b;
         }
     }
-    else if (b > a && b > c)
+    else if (b >= a && b >= c)
     {
         max = b;
-        if (a > c)
+        if (a >= c)
         {
             mid = a;
             min = c;
@@ -38,10 +38,10 @@ int main()
             min = a;
         }
     }
-    else if (c > a && c > b)
+    else if (c >= a && c >= b)
     {
         max = c;
-        if (a > b)
+        if (a >= b)
         {
             mid = a;
             min = b;
