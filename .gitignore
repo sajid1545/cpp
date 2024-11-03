@@ -34,7 +34,7 @@
 
 # IDE specific files
 # Visual Studio
-.vscode/
+# .vscode/
 .vs/
 *.code-workspace
 *.sln
