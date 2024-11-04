@@ -9,11 +9,19 @@ int main()
 
     cin >> A >> B >> C >> D;
 
-    long long multipliedVal = A * B * C * D;
+    long multipliedVal = (A % 100) * (B % 100) * (C % 100) * (D % 100);
 
-    long long lastTwoDigits = multipliedVal % 100;
+    int lastTwoDigits = multipliedVal % 100;
 
-    cout << lastTwoDigits;
+    if (lastTwoDigits >= 0 && lastTwoDigits <= 9)
+    {
+        cout << "0" << lastTwoDigits;
+    }
+    else
+    {
+
+        cout << lastTwoDigits;
+    }
 
     return 0;
 }
