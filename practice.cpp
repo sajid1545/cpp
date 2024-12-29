@@ -3,8 +3,10 @@ using namespace std;
 
 int main()
 {
-    int x = 10;
-    int y = 20;
+    int number;
+    cout << "Enter a number: ";
+    cin >> number;
 
-    cout << x + y;
+    cout << "You entered: " << number << endl;
+    return 0;
 }
